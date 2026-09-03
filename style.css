@@ -1,0 +1,22 @@
+/*Variaveis para configuração das cores*/
+
+:root{
+    --RoxoClaro:#7C3AED;
+    --Preto:#0F0F17;
+    --RoxoEscuro:#350051;
+    --Branco:#FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'archivo', 'archivo black', archivo narrow, sans-serif;
+    background-color: var(--Preto);
+    color: var(--Branco);
+    line-height: 1.6;
+}

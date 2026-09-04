@@ -20,3 +20,86 @@ body{
     color: var(--Branco);
     line-height: 1.6;
 }
+
+/* ESTILIZANDO MINHA NAVBAR/ CABEÇALHO*/
+
+/* ESTILIZANDO MINHA NAVBAR/ CABEÇALHO */
+
+.cabecalho {
+  display: flex; /* Corrigido de 'flexbox' para 'flex' */
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 8%;
+  background-color:#350051;
+}
+
+.logo {
+
+    font-size: 1.3rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.lista-nav {
+  display: flex;          
+  gap: 2rem;              
+  list-style: none;       
+}
+
+.lista-nav a{
+
+    color: var(--Branco);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.lista-nav a:hover {
+  color: var(--RoxoClaro); 
+}
+
+/* ===================================
+   COLE A SEGUNDA PARTE DAQUI PARA BAIXO
+   =================================== */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 8%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+article.hero {
+  max-width: 520px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+.subtitulo {
+  color: var(--RoxoClaro);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.subtitulo::before {
+  content: '< ';
+}
+
+.subtitulo::after {
+  content: ' >';
+}
+
+.descricao {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  margin-bottom: 2.5rem;
+}

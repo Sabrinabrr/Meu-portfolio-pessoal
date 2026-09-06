@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. CONFIGURAÇÕES GERAIS E PALETA DE CORES
-   ========================================================================== */
+/* CONFIGURAÇÕES GERAIS E PALETA DE CORES */
 * {
   margin: 0;
   padding: 0;
@@ -36,22 +34,19 @@ body {
   line-height: 1.6;
 }
 
-/* ==========================================================================
-   2. REGRA PARA AS SEÇÕES OCUPAREM A TELA TODA (100vh)
-   ========================================================================== */
+/*  SEÇÕES OCUPAREM A TELA TODA (100vh) */
 .secao-hero,
 .secao-sobre,
 .secao-habilidades,
 .secao-projetos,
 .secao-contatos {
-  min-height: 100vh;             /* Ocupa 100% da altura da tela */
-  display: flex;
-  align-items: center;           /* Centraliza verticalmente */
-  justify-content: center;       /* Centraliza horizontalmente */
-  padding: 100px 20px 60px 20px; /* Evita que o topo fique coberto pela navbar */
+  min-height: 100vh;             
+  align-items: center;           
+  justify-content: center;       
+  padding: 100px 20px 60px 20px; 
 }
 
-/* Containers para alinhar tudo no centro no Desktop */
+/*alinhar tudo no centro no Desktop */
 .container-secao,
 .container-header,
 .container-hero {
@@ -88,16 +83,15 @@ ul {
   margin-top: 4px;
 }
 
-/* ==========================================================================
-   3. CABEÇALHO / NAVBAR FIXA
-   ========================================================================== */
+/* CABEÇALHO / NAVBAR  */
+
 .cabecalho {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(53, 0, 81, 0.95); /* Usando seu RoxoEscuro com transparência */
+  background-color: rgba(53, 0, 81, 0.95); 
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
@@ -132,9 +126,7 @@ ul {
   color: var(--accent-color);
 }
 
-/* ==========================================================================
-   4. SEÇÃO INÍCIO (HERO)
-   ========================================================================== */
+/*  SEÇÃO INÍCIO (HERO) */
 .secao-hero {
   background: radial-gradient(circle at 20% 50%, var(--RoxoEscuro) 0%, var(--Preto) 70%);
 }
@@ -180,7 +172,7 @@ ul {
   color: var(--Branco);
   padding: 10px 18px;
   border-radius: 25px;
-  border: 1px solid hs(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -211,9 +203,7 @@ ul {
   box-shadow: 0 0 25px rgba(124, 58, 237, 0.4);
 }
 
-/* ==========================================================================
-   5. SEÇÃO SOBRE MIM
-   ========================================================================== */
+/* SEÇÃO SOBRE MIM */
 .secao-sobre {
   background-color: var(--preto);
 }
@@ -309,9 +299,7 @@ ul {
   opacity: 0.8;
 }
 
-/* ==========================================================================
-   6. SEÇÃO HABILIDADES
-   ========================================================================== */
+/* 6. SEÇÃO HABILIDADES*/
 .secao-habilidades {
   background-color: var(--bg-primary);
 }
@@ -345,9 +333,7 @@ ul {
   color: var(--text-muted);
 }
 
-/* ==========================================================================
-   7. SEÇÃO MEUS PROJETOS
-   ========================================================================== */
+/* SEÇÃO MEUS PROJETOS */
 .secao-projetos {
   background-color: var(--bg-secondary);
 }
@@ -432,9 +418,7 @@ ul {
   border-radius: 4px;
 }
 
-/* ==========================================================================
-   8. SEÇÃO CONTATO & RODAPÉ
-   ========================================================================== */
+/*SEÇÃO CONTATO & RODAPÉ*/
 .secao-contatos {
   background-color: var(--bg-primary);
   text-align: center;
@@ -460,9 +444,7 @@ ul {
   margin-top: 5px;
 }
 
-/* ==========================================================================
-   9. RESPONSIVIDADE (DISPOSITIVOS MÓVEIS)
-   ========================================================================== */
+/*RESPONSIVIDADE (DISPOSITIVOS MÓVEIS)*/
 @media (max-width: 768px) {
   .container-header {
     flex-direction: column;

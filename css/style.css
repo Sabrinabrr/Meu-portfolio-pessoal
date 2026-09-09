@@ -174,3 +174,21 @@ ul {
     padding: 60px 20px;
   }
 }
+
+/* Classes controladas pelo JS para animações de rolagem */
+.escondido {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilo para indicar qual página está aberta no menu */
+.lista-nav a.ativo {
+  color: var(--RoxoClaro);
+  border-bottom: 2px solid var(--RoxoClaro);
+}

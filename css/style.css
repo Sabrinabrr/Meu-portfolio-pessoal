@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('sobremim.css');
+@import url('habilidades.css');
+@import url('projetos.css');
+@import url('contatos.css');
+
+
+/* IMPORTAÇÃO DE FONTES & VARIÁVEIS GLOBAIS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+ 
+  --RoxoClaro: #7C3AED;
+  --Preto: #0F0F17;
+  --RoxoEscuro: #350051;
+  --Branco: #FFFFFF;
+
+  
+  --accent-color: var(--RoxoClaro);
+  --bg-primary: var(--Preto);
+  --bg-secondary: #161622;
+  --bg-card: #1f1f2e;
+  --text-main: var(--Branco);
+  --text-muted: #ffff ;
+
+  
+  --font-family: 'Archivo', sans-serif;
+  --max-width: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Configurações  da Seção */
+.secao-hero,
+.secao-sobre,
+.secao-habilidades,
+.secao-projetos,
+.secao-contatos {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 60px 20px;
+}
+
+.container-secao,
+.container-header,
+.container-hero {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cabecalho-secao {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cabecalho-secao h2 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  letter-spacing: 1.5px;
+}
+
+.subtitulo-secao {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+/* CABEÇALHO / NAVBAR*/
+.cabecalho {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(53, 0, 81, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--Branco);
+  letter-spacing: 2px;
+}
+
+.lista-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.lista-nav a {
+  font-weight: 500;
+  color: var(--Branco);
+  transition: color 0.3s ease;
+}
+
+.lista-nav a:hover {
+  color: var(--accent-color);
+}
+
+/*RODAPÉ */
+
+.rodape-sobre {
+  background-color: var(--Preto);
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.rodape-sobre p + p {
+  margin-top: 5px;
+}
+
+/*RESPONSIVIDADE (MOBILE)*/
+@media (max-width: 768px) {
+  .container-header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+    gap: 10px;
+  }
+
+  .lista-nav {
+    gap: 15px;
+    font-size: 0.9rem;
+  }
+
+  .secao-hero,
+  .secao-sobre,
+  .secao-habilidades,
+  .secao-projetos,
+  .secao-contatos {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+}

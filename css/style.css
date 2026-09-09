@@ -192,3 +192,14 @@ ul {
   color: var(--RoxoClaro);
   border-bottom: 2px solid var(--RoxoClaro);
 }
+.subtitulo::after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: piscaCursor 0.7s infinite;
+}
+
+@keyframes piscaCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

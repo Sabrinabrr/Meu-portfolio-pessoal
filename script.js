@@ -1,33 +1,26 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // 1. Destaque do Link Ativo no Menu de Navegação
-  const linksNav = document.querySelectorAll(".lista-nav a");
-  const paginaAtual = window.location.pathname.split("/").pop();
+const botaoLinkedin = document.querySelector(".btn-linkedin");
 
-  linksNav.forEach((link) => {
-    const hrefLink = link.getAttribute("href").split("/").pop();
-    if (hrefLink === paginaAtual || (paginaAtual === "" && hrefLink === "index.html")) {
-      link.classList.add("ativo");
-    }
+botaoLinkedin.addEventListener("click", function () {
+    alert("Você será direcionado para o meu LinkedIn!");
+});
+
+// Efeito Máquina de Escrever para o Subtítulo
+function efeitoDigitacao(elemento) {
+  const textoArray = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  
+  textoArray.forEach((letra, i) => {
+    setTimeout(() => {
+      elemento.innerHTML += letra;
+    }, 75 * i); // Ajuste a velocidade alterando o valor 75
   });
+}
 
-  // 2. Animação de Surgimento (Fade-In) ao Rolar a Página
-  const elementosAnimar = document.querySelectorAll(
-    ".cartao-habilidade, .conteudo-projeto, .container-secao, .hero-conteudo"
-  );
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visivel");
-        }
-      });
-    },
-    { threshold: 0.15 }
-  );
-
-  elementosAnimar.forEach((el) => {
-    el.classList.add("escondido");
-    observer.observe(el);
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  const subtitulo = document.querySelector('.subtitulo');
+  
+  if (subtitulo) {
+    efeitoDigitacao(subtitulo);
+  }
 });

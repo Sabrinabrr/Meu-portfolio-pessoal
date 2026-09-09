@@ -1,0 +1,34 @@
+/* SEÇÃO HABILIDADES */
+
+.secao-habilidades {
+  background-color: var(--bg-primary);
+}
+
+.grade-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cartao-habilidade {
+  background-color: var(--bg-card);
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+.cartao-habilidade:hover {
+  transform: translateY(-3px);
+}
+
+.cartao-habilidade h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: var(--Branco);
+}
+
+.cartao-habilidade p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

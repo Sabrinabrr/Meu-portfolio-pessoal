@@ -1,0 +1,66 @@
+.secao-contatos {
+  background-color: var(--Preto);
+  text-align: center;
+  min-height: calc(100vh - 130px); /* Garante que oca a tela toda entre nav e footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 60px 20px;
+}
+
+.texto-contato {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  padding: 0 10px;
+}
+
+.link-linkedin-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--bg-card);
+  color: var(--Branco);
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 1px solid var(--RoxoClaro);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  max-width: 100%; /* Evita que o botão quebre a tela em visores muito pequenos */
+}
+
+.btn-linkedin svg {
+  fill: var(--RoxoClaro);
+  transition: fill 0.3s ease;
+  flex-shrink: 0;
+}
+
+.btn-linkedin:hover {
+  background-color: var(--RoxoClaro);
+  color: var(--Branco);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+}
+
+.btn-linkedin:hover svg {
+  fill: var(--Branco);
+}
+
+/* Regra para telas menores (smartphones) */
+@media (max-width: 480px) {
+  .texto-contato {
+    font-size: 1rem;
+  }
+
+  .btn-linkedin {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+}

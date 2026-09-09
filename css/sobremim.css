@@ -1,0 +1,192 @@
+/* SEÇÃO HERO / INÍCIO */
+.secao-hero {
+  background: radial-gradient(circle at 20% 50%, var(--RoxoEscuro) 0%, var(--Preto) 70%);
+}
+
+.container-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-conteudo h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: var(--Branco);
+}
+
+.hero-conteudo .subtitulo {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-conteudo .descricao {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+/* Redes Sociais */
+.social-links ul {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-card);
+  color: var(--Branco);
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-color);
+  background-color: var(--RoxoEscuro);
+}
+
+.social-links svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Imagem de Destaque */
+.imagem-destaque-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-destaque {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent-color);
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.4);
+}
+
+/* SEÇÃO SOBRE MIM */
+.secao-sobre {
+  background-color: var(--Preto);
+}
+
+.bio-sobre {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.cartao {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho-cartao {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.caixa-icone {
+  background: rgba(124, 58, 237, 0.15);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa-icone svg {
+  stroke: var(--RoxoClaro);
+}
+
+.cartao h3 {
+  font-size: 1.1rem;
+  color: var(--Branco);
+}
+
+.emblema-status {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  width: fit-content;
+}
+
+.status-concluido {
+  background-color: rgba(124, 58, 237, 0.2);
+  color: var(--accent-color);
+}
+
+.status-andamento {
+  background-color: rgba(234, 179, 8, 0.2);
+  color: #facc15;
+}
+
+.texto-cartao {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.botao-detalhes {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}
+
+.botao-detalhes:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .container-hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-conteudo h1 {
+    font-size: 2.2rem;
+  }
+
+  .social-links ul {
+    justify-content: center;
+  }
+
+  .imagem-destaque {
+    width: 200px;
+    height: 200px;
+  }
+}

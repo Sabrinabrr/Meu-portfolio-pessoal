@@ -1,0 +1,84 @@
+/* SEÇÃO MEUS PROJETOS */
+.secao-projetos {
+  background-color: var(--bg-secondary);
+}
+
+.grade-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.cartao-projeto {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.cartao-projeto:hover {
+  transform: translateY(-5px);
+}
+
+.maquete-projeto {
+  width: 100%;
+  height: 180px;
+  background-color: var(--Preto);
+  overflow: hidden;
+}
+
+.maquete-projeto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cartao-projeto:hover .maquete-projeto img {
+  transform: scale(1.05);
+}
+
+.conteudo-projeto {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.conteudo-projeto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: var(--Branco);
+}
+
+.descricao-projeto {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.pilha-tecnologias span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.icones-tecnologias {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.emblema-tecnologia {
+  background-color: rgba(124, 58, 237, 0.2);
+  color: var(--accent-color) !important;
+  font-size: 0.75rem !important;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
